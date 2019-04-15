@@ -9,7 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="calculadora.js"></script>
     <style>
-
+        #operacao{
+            position: absolute;
+            color: blue;
+            margin: 5px 10px;
+        }
+        #tela{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -28,34 +35,54 @@
             <div class="container bg-primary text-white">
                 <div class="row">
                     <header class="col-md-3">
-                        <p>header</p>
+                        <h3>WebCalculadora- SI</h3>
                         <form>
-                            <input type="text" id="tela" class="form-control">
+                            <label id="operacao"></label>
+                            <input type="text" id="tela" class="form-control"><br/>
                         </form>
                     </header>
                 </div>
                 <div class="row">
                     <section class="col-md-3">
-                        <p>section</p>
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="1">
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="2">
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="3">
+                        <input class="btn btn-info btn-lg" type="button" name="vezes" value="*">
+                        <input class="btn btn-info btn-lg" type="button" name="ce" value="CE">
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-md-3">
+                        <br/>
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="4">
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="5">
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="6">
+                        <input class="btn btn-info btn-lg" type="button" name="divisao" value="/">
+                        <input class="btn btn-info btn-lg" type="button" name="apagar" value="AP">
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-md-3">
+                        <br/>
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="7">
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="8">
                         <input class="btn btn-info btn-lg" type="button" name="numero" value="9">
-                        <input class="btn btn-info btn-lg" type="button" name="numero" value="0">
-                        <input class="btn btn-info btn-lg" type="button" name="c" value="C">
-                        <input class="btn btn-info btn-lg" type="button" name="ce" value="CE">
-                        <input class="btn btn-info btn-lg" type="button" value="+">
-                        <input class="btn btn-info btn-lg" type="button" value="-">
-                        <input class="btn btn-info btn-lg" type="button" value="*">
-                        <input class="btn btn-info btn-lg" type="button" value="/">
-                        <input class="btn btn-info btn-lg" type="button" value=".">
-                        <input class="btn btn-info btn-lg btn-block" type="button" value="=">
+                        <input class="btn btn-info btn-lg" type="button" name="subtracao" value="-">
 
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-md-3">
+                        <br/>
+                        <input class="btn btn-info btn-lg" type="button" name="numero" value=".">
+                        <input class="btn btn-info btn-lg" type="button" name="numero" value="0">
+                        <input class="btn btn-info btn-lg" type="button" name="soma" value="+">
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-md-3">
+                        <br/>
+                        <input class="btn btn-info btn-lg btn-block" type="button" name="igual" value="=">
                     </section>
                 </div>
             </div>
