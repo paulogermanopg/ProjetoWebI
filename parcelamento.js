@@ -10,6 +10,7 @@ $(function () {
         }else {
             total = valor / parcela;
         }
+        var total = total.toFixed(2);
         var i, table;
         table = "<table class=\"table\"><thead>\n" +
             "    <tr>\n" +
